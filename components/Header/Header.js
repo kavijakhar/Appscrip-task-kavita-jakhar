@@ -3,6 +3,7 @@ import { FaCheck } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import Fillters from './Fillters';
 import Products from '../Products/Products';
+import Footer from '../Footer/Footer';
 
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
@@ -53,6 +54,7 @@ const Header = () => {
       <div className="parent-container">
       <Fillters filtersVisible={filtersVisible} />
       <Products filtersVisible={filtersVisible}/>
+      
       </div>
     </>
   );
