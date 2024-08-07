@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaArrowRight, FaCheck } from 'react-icons/fa';
+import { FaCheck } from 'react-icons/fa';
 import { IoIosArrowBack, IoIosArrowDown } from 'react-icons/io';
 import Fillters from './Fillters';
 import Products from '../Products/Products';
@@ -7,7 +7,7 @@ import Products from '../Products/Products';
 const Header = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [selectedOption, setSelectedOption] = useState('recommended');
-  const [filtersVisible, setFiltersVisible] = useState(true);
+  const [filtersVisible, setFiltersVisible] = useState(false);
 
   const toggleDropdown = () => {
     setDropdownVisible(!dropdownVisible);
